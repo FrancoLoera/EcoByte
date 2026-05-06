@@ -1,0 +1,151 @@
+:root {
+    --primario:         #00311F;
+    --secundario:       #2F6B53;
+    --terciario:        #7FAF9B;
+    --primario-claro:   #FFF7E6;
+    --secundario-claro: #E6E2C9;
+}
+
+* {
+    font-family: 'Inter';
+}
+
+body {
+    background-color: var(--primario-claro);
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.primary-button {
+    padding: 8px 25px;
+    background-color: var(--primario);
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.primary-button i {
+    margin-bottom: -1px;
+}
+
+.primary-button:hover {
+    box-shadow: rgba(0, 49, 31, 0.4) 4px 4px, rgba(0, 49, 31, 0.2) 8px 8px;
+    transform: translateY(-5px);
+}
+
+.header {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.header.hide {
+    transform: translateY(-150%);
+}
+
+.menu {
+    position: relative;
+    padding: 15px 20px;
+    border-radius: 999px;
+    background: rgba(230, 226, 201, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.menu img {
+    max-height: 25px;
+}
+
+.menu-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-center a {
+    color: black;
+}
+
+.menu-right a {
+    padding: 10px 10px;
+    background-color: var(--primario);
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-right a:hover {
+    background-color: white;
+    color: var(--primario);
+    box-shadow: rgba(0, 49, 31, 0.4) 4px 4px, rgba(0, 49, 31, 0.2) 8px 8px;
+    transform: translateY(-5px);
+}
+
+#hero-section {
+    background-image: url(../img/Hero\ Background\ Horizontal.png);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+#hero-section h1::after{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: var(--secundario-claro);
+    margin-top: 25px;
+}
+
+#hero-section h1 span{
+    color: var(--primario);
+}
+
+#hero-section p{
+    color: var(--primario);
+}
+
+#hero-section-1 {
+    background-image: url(../img/Hero\ Background\ Host\ Vertical.png);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding-top: 22vh;
+}
+
+#hero-section-1 h1::after{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: var(--secundario-claro);
+    margin: 25px auto 0;
+}
+
+#hero-section-1 h1 span{
+    color: var(--primario);
+}
+
+#hero-section-1 p{
+    color: var(--primario);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/EcoByte Favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>EcoByte - Green IT</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu d-flex align-items-center justify-content-between">
+                <div>
+                    <img src="assets/img/EcoByte Horizontal Logo.png">
+                </div>
+
+                <ul class="menu-center m-0 p-0 gap-5 d-flex">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">EcoTrack</a></li>
+                </ul>
+
+                <div class="menu-right">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero-section-1" class="vh-100 d-flex justify-content-center">
+            <div class="container d-flex flex-column align-items-center">
+                <h1><span class="fw-bolder">Eco</span>Byte</h1>
+                <p class="d-flex align-items-center fw-semibold mt-3 mb-4">Optimiza tus datos. Reduce tu huella digital.</p>
+                <a class="primary-button align-self-center d-flex align-items-center gap-1" href="">
+                    Contactar<i class="fa-solid fa-angles-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let lastScroll = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            header.classList.add('hide');
+        } else {
+            header.classList.remove('hide');
+        }
+
+        lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
