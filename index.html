@@ -1,66 +1,472 @@
-<!DOCTYPE html>
-<html lang="es" translate="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/EcoByte Favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>EcoByte - Green IT</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="menu d-flex align-items-center justify-content-between">
-                <div>
-                    <img src="assets/img/EcoByte Horizontal Logo.png">
-                </div>
-
-                <ul class="menu-center m-0 p-0 gap-5 d-flex">
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">EcoTrack</a></li>
-                </ul>
-
-                <div class="menu-right">
-                    <a href="#"><i class="fa-solid fa-phone"></i></a>
-                </div>
-            </nav>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EcoByte ofrece soluciones de Green IT, diseño web ecológico, auditoría de huella digital y optimización tecnológica sustentable.">
+    <title>EcoByte | Innovación que no deja huella</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230f6b45'/%3E%3Cpath d='M43 18c-13 1-22 8-22 18 0 6 4 10 10 10 11 0 18-10 18-25 0-2-2-3-6-3Zm-7 11c-5 3-9 7-12 13' fill='none' stroke='%23dff5e9' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="92" tabindex="0">
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top eco-navbar" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark"><i class="bi bi-leaf"></i></span>
+          <span>EcoByte</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#problemas">Problemas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link btn-nav" href="#contacto">Contacto</a></li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+
     <main>
-        <section id="hero-section-1" class="vh-100 d-flex justify-content-center">
-            <div class="container d-flex flex-column align-items-center">
-                <h1><span class="fw-bolder">Eco</span>Byte</h1>
-                <p class="d-flex align-items-center fw-semibold mt-3 mb-4">Optimiza tus datos. Reduce tu huella digital.</p>
-                <a class="primary-button align-self-center d-flex align-items-center gap-1" href="">
-                    Contactar<i class="fa-solid fa-angles-right"></i>
-                </a>
+      <section id="inicio" class="hero-section section-pad">
+        <div class="hero-grid"></div>
+        <div class="tech-pulse-layer" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="container position-relative">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="hero-copy reveal">
+                <span class="eyebrow"><i class="bi bi-cpu"></i> Green IT para empresas inteligentes</span>
+                <h1>EcoByte</h1>
+                <p class="hero-tagline">Innovación que no deja huella</p>
+                <p class="hero-text">
+                  Soluciones de TI sustentables para optimizar infraestructura, acelerar sitios web,
+                  reducir consumo energético y convertir la eficiencia digital en ventaja ambiental.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                  <a class="btn btn-eco btn-lg" href="#servicios">Ver servicios <i class="bi bi-arrow-right"></i></a>
+                  <a class="btn btn-outline-eco btn-lg" href="#contacto">Solicitar diagnóstico</a>
+                </div>
+                <div class="hero-dashboard" aria-label="Indicadores de eficiencia digital">
+                  <div class="dashboard-head">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <strong>EcoTrack Live</strong>
+                  </div>
+                  <div class="dashboard-lines">
+                    <span style="--level: 78%"></span>
+                    <span style="--level: 52%"></span>
+                    <span style="--level: 66%"></span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="col-lg-6">
+              <div class="hero-visual reveal delay-1" data-tilt>
+                <img src="assets/img/ecobyte-hero.png" alt="Infraestructura tecnológica sustentable con circuitos verdes y naturaleza" class="img-fluid hero-image">
+                <div class="impact-card floating-card">
+                  <span>Green IT</span>
+                  <strong>-CO2</strong>
+                  <small>Infraestructura más ligera y eficiente</small>
+                </div>
+                <div class="metric-pill">
+                  <i class="bi bi-lightning-charge"></i>
+                  Optimización en tiempo real
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="scroll-cue" href="#nosotros" aria-label="Bajar a la secciÃ³n nosotros">
+            <span></span>
+          </a>
+        </div>
+      </section>
+
+      <section id="nosotros" class="section-pad about-section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5 reveal">
+              <div class="eco-orbit" aria-hidden="true">
+                <div class="orbit-core"><i class="bi bi-globe-americas"></i></div>
+                <span class="orbit-node node-a"><i class="bi bi-code-slash"></i></span>
+                <span class="orbit-node node-b"><i class="bi bi-database-check"></i></span>
+                <span class="orbit-node node-c"><i class="bi bi-tree"></i></span>
+              </div>
+            </div>
+            <div class="col-lg-7 reveal delay-1">
+              <span class="section-kicker">Nosotros</span>
+              <h2 class="section-title">Tecnología de alto rendimiento con bajo impacto ambiental.</h2>
+              <p class="lead eco-lead">
+                EcoByte impulsa la transformación digital de organizaciones que quieren innovar sin aumentar
+                innecesariamente su huella tecnológica. Combinamos código limpio, análisis de datos,
+                eficiencia energética y estrategias Green IT.
+              </p>
+              <div class="row g-3 mt-3">
+                <div class="col-md-6">
+                  <article class="mission-card h-100" data-tilt>
+                    <i class="bi bi-bullseye"></i>
+                    <h3>Misión</h3>
+                    <p>Optimizar infraestructura tecnológica y desarrollo de software mediante soluciones de TI de alto rendimiento y bajo impacto ambiental.</p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="mission-card h-100" data-tilt>
+                    <i class="bi bi-stars"></i>
+                    <h3>Visión</h3>
+                    <p>Ser para 2035 un referente líder en servicios tecnológicos sustentables, donde cada línea de código contribuya a un ecosistema digital más ligero.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problemas" class="section-pad problems-section">
+        <div class="container">
+          <div class="text-center mx-auto section-heading reveal">
+            <span class="section-kicker">Problemas que resolvemos</span>
+            <h2 class="section-title">Menos desperdicio digital, más rendimiento operativo.</h2>
+            <p>Detectamos fugas de eficiencia tecnológica y las convertimos en oportunidades medibles de ahorro, velocidad y sostenibilidad.</p>
+          </div>
+          <div class="row g-4 mt-4">
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="problem-card" data-tilt>
+                <i class="bi bi-server"></i>
+                <h3>Alto consumo energético</h3>
+                <p>Auditamos servidores, almacenamiento y uso de equipos para definir acciones concretas de reducción.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal delay-1">
+              <article class="problem-card" data-tilt>
+                <i class="bi bi-speedometer2"></i>
+                <h3>Sitios lentos y pesados</h3>
+                <p>Optimizamos código, imágenes, scripts y peticiones para mejorar velocidad y experiencia de usuario.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal delay-2">
+              <article class="problem-card" data-tilt>
+                <i class="bi bi-database-x"></i>
+                <h3>Datos redundantes</h3>
+                <p>Identificamos información obsoleta o innecesaria para limpiar almacenamiento y bajar costos.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal delay-3">
+              <article class="problem-card" data-tilt>
+                <i class="bi bi-graph-up-arrow"></i>
+                <h3>Poca visibilidad ESG</h3>
+                <p>Traducimos consumo tecnológico en datos claros, reportes y recomendaciones accionables.</p>
+              </article>
+            </div>
+          </div>
+          <div class="accordion eco-accordion reveal mt-4" id="problemAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCosts" aria-expanded="true" aria-controls="collapseCosts">
+                  Costos elevados por mala gestión tecnológica
+                </button>
+              </h3>
+              <div id="collapseCosts" class="accordion-collapse collapse show" data-bs-parent="#problemAccordion">
+                <div class="accordion-body">EcoByte cruza consumo, rendimiento y uso real de recursos para priorizar cambios que reduzcan gasto sin sacrificar operación.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePerformance" aria-expanded="false" aria-controls="collapsePerformance">
+                  Bajo rendimiento de sistemas por falta de optimización
+                </button>
+              </h3>
+              <div id="collapsePerformance" class="accordion-collapse collapse" data-bs-parent="#problemAccordion">
+                <div class="accordion-body">Revisamos arquitectura, consultas, dependencias y flujos digitales para entregar sistemas más rápidos, ligeros y mantenibles.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFootprint" aria-expanded="false" aria-controls="collapseFootprint">
+                  Desconocimiento sobre cómo reducir la huella digital
+                </button>
+              </h3>
+              <div id="collapseFootprint" class="accordion-collapse collapse" data-bs-parent="#problemAccordion">
+                <div class="accordion-body">Convertimos el diagnóstico técnico en una ruta clara con acciones, métricas y beneficios ambientales entendibles para negocio.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="section-pad services-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Servicios y productos</span>
+            <h2 class="section-title">Soluciones diseñadas para acelerar y limpiar tu ecosistema digital.</h2>
+          </div>
+
+          <div id="auditoria" class="service-feature reveal" data-tilt>
+            <div class="service-icon"><i class="bi bi-search-heart"></i></div>
+            <div>
+              <span class="type-badge">Servicio</span>
+              <h3>Auditoría de huella digital</h3>
+              <p>Evaluamos el impacto real de tu infraestructura tecnológica para identificar ineficiencias y oportunidades de optimización.</p>
+              <ul class="feature-list">
+                <li>Análisis de almacenamiento, servidores y consumo energético.</li>
+                <li>Detección de datos redundantes o innecesarios.</li>
+                <li>Evaluación del rendimiento de sistemas actuales.</li>
+                <li>Diagnóstico del impacto ambiental digital.</li>
+              </ul>
+            </div>
+            <div class="service-result">
+              <strong>Resultado</strong>
+              <p>Plan claro para reducir consumo, costos y huella ambiental sin comprometer rendimiento.</p>
+              <a href="#contacto">Conocer más</a>
+            </div>
+          </div>
+
+          <div id="web-ecologico" class="service-feature reveal" data-tilt>
+            <div class="service-icon"><i class="bi bi-window-stack"></i></div>
+            <div>
+              <span class="type-badge">Servicio</span>
+              <h3>Diseño web ecológico</h3>
+              <p>Creamos sitios web rápidos, ligeros y eficientes que consumen menos recursos y ofrecen una mejor experiencia al usuario.</p>
+              <ul class="feature-list">
+                <li>Optimización extrema de peso y tiempos de carga.</li>
+                <li>Desarrollo con código limpio y eficiente.</li>
+                <li>Minimización de scripts, imágenes pesadas y dependencias excesivas.</li>
+                <li>Arquitectura pensada para bajo consumo energético.</li>
+              </ul>
+            </div>
+            <div class="service-result">
+              <strong>Resultado</strong>
+              <p>Sitios web más rápidos, sostenibles y con mejor desempeño general.</p>
+              <a href="#contacto">Conocer más</a>
+            </div>
+          </div>
+
+          <div id="ecotrack" class="service-feature reveal" data-tilt>
+            <div class="service-icon"><i class="bi bi-activity"></i></div>
+            <div>
+              <span class="type-badge product">Producto</span>
+              <h3>EcoTrack</h3>
+              <p>Sensores inteligentes que monitorean el consumo tecnológico de una empresa y lo integran en un dashboard en tiempo real.</p>
+              <ul class="feature-list">
+                <li>Sensores físicos para medir consumo energético.</li>
+                <li>Integración automática con sistemas y dispositivos de oficina.</li>
+                <li>Dashboard claro, intuitivo y accionable.</li>
+                <li>Reportes y recomendaciones automatizadas.</li>
+              </ul>
+            </div>
+            <div class="service-result">
+              <strong>Resultado</strong>
+              <p>Control total sobre el impacto tecnológico con datos precisos para tomar mejores decisiones.</p>
+              <a href="#contacto">Conocer más</a>
+            </div>
+          </div>
+
+          <div id="datos-verdes" class="service-feature reveal" data-tilt>
+            <div class="service-icon"><i class="bi bi-database-gear"></i></div>
+            <div>
+              <span class="type-badge alliance">Servicio con alianza</span>
+              <h3>Datos Verdes ESG</h3>
+              <p>Limpieza profunda, optimización y análisis de arquitectura de datos para reducir costos, mejorar rendimiento y cumplir criterios ESG.</p>
+              <ul class="feature-list">
+                <li>Eliminación de datos redundantes, obsoletos o innecesarios.</li>
+                <li>Reestructuración de bases de datos y optimización de consultas.</li>
+                <li>Análisis del impacto ambiental del almacenamiento digital.</li>
+                <li>Certificado de ahorro en almacenamiento sostenible en colaboración con empresa aliada.</li>
+              </ul>
+            </div>
+            <div class="service-result">
+              <strong>Resultado</strong>
+              <p>Respaldo medible para reducir huella digital y elevar la eficiencia de activos tecnológicos.</p>
+              <a href="#contacto">Conocer más</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios" class="section-pad benefits-section">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5 reveal">
+              <span class="section-kicker">Beneficios</span>
+              <h2 class="section-title">Ser ecológico también significa ser más eficiente y competitivo.</h2>
+              <p>EcoByte conecta sostenibilidad con resultados de negocio: menor consumo, mejor rendimiento, claridad de datos y tecnología preparada para nuevas exigencias del mercado.</p>
+              <div class="counter-row">
+                <div><strong data-counter="38">0</strong><span>% menos peso web</span></div>
+                <div><strong data-counter="24">0</strong><span>% ahorro estimado</span></div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="benefit-grid">
+                <div class="benefit-item reveal"><i class="bi bi-cash-coin"></i><span>Reducción de costos tecnológicos</span></div>
+                <div class="benefit-item reveal"><i class="bi bi-lightning"></i><span>Menor consumo energético</span></div>
+                <div class="benefit-item reveal"><i class="bi bi-rocket-takeoff"></i><span>Rendimiento digital optimizado</span></div>
+                <div class="benefit-item reveal"><i class="bi bi-browser-chrome"></i><span>Mejores tiempos de carga</span></div>
+                <div class="benefit-item reveal"><i class="bi bi-patch-check"></i><span>Alineación con ESG</span></div>
+                <div class="benefit-item reveal"><i class="bi bi-bar-chart-line"></i><span>Decisiones con datos claros</span></div>
+                <div class="benefit-item reveal"><i class="bi bi-recycle"></i><span>Reducción de huella digital</span></div>
+                <div class="benefit-item reveal"><i class="bi bi-code-square"></i><span>Código limpio y eficiente</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonios" class="section-pad testimonials-section">
+        <div class="container">
+          <div class="text-center mx-auto section-heading reveal">
+            <span class="section-kicker">Testimonios</span>
+            <h2 class="section-title">Resultados que una empresa sustentable puede presentar con claridad.</h2>
+          </div>
+          <!-- Textos de muestra. Reemplazar por testimonios reales cuando EcoByte tenga clientes publicados. -->
+          <div id="testimonialCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <article class="testimonial-card">
+                  <p>"EcoByte nos ayudó a entender por primera vez qué parte de nuestra operación digital consumía más recursos. El diagnóstico fue claro y aplicable."</p>
+                  <div><strong>Mariana Torres</strong><span>Dirección de Operaciones, NovaCorp</span></div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="testimonial-card">
+                  <p>"Nuestro sitio cargaba lento y dependía de demasiados recursos. Con el rediseño ecológico mejoramos rendimiento sin perder calidad visual."</p>
+                  <div><strong>Carlos Méndez</strong><span>Marketing Digital, Lumina Studio</span></div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="testimonial-card">
+                  <p>"Datos Verdes ESG nos dio orden, métricas y una ruta concreta para reducir almacenamiento innecesario en nuestras bases de datos."</p>
+                  <div><strong>Ana Beltrán</strong><span>Coordinación de Tecnología, Vértice Financiero</span></div>
+                </article>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Testimonio anterior">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Siguiente testimonio">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section-pad contact-section">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5 reveal">
+              <span class="section-kicker">Contacto</span>
+              <h2 class="section-title">Hablemos de cómo reducir tu huella digital.</h2>
+              <p>Solicita un diagnóstico inicial y recibe una propuesta orientada a eficiencia, rendimiento y sostenibilidad.</p>
+              <div class="contact-list">
+                <a href="tel:+528112345678"><i class="bi bi-telephone"></i> +52 81 1234 5678</a>
+                <a href="mailto:hola@ecobyte.mx"><i class="bi bi-envelope"></i> hola@ecobyte.mx</a>
+                <span><i class="bi bi-geo-alt"></i> Servicio para México y Latinoamérica</span>
+                <span><i class="bi bi-instagram"></i> @ecobyte.green</span>
+              </div>
+            </div>
+            <div class="col-lg-7 reveal delay-1">
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-header">
+                  <span class="form-icon" aria-hidden="true"><i class="bi bi-send-check"></i></span>
+                  <div>
+                    <strong>Diagnostico Green IT</strong>
+                    <p>Cuentanos que quieres optimizar y te responderemos con una ruta inicial.</p>
+                  </div>
+                </div>
+                <div id="formAlert" class="form-alert" role="status" aria-live="polite"></div>
+                <div class="row g-3">
+                  <div class="col-md-6 form-field">
+                    <label for="name" class="form-label">Nombre</label>
+                    <div class="input-shell">
+                      <i class="bi bi-person" aria-hidden="true"></i>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="invalid-feedback">Ingresa tu nombre.</div>
+                  </div>
+                  <div class="col-md-6 form-field">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <div class="input-shell">
+                      <i class="bi bi-envelope" aria-hidden="true"></i>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="correo@empresa.com" required>
+                    </div>
+                    <div class="invalid-feedback">Ingresa un correo válido.</div>
+                  </div>
+                  <div class="col-md-6 form-field">
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <div class="input-shell">
+                      <i class="bi bi-telephone" aria-hidden="true"></i>
+                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="+52 81 0000 0000">
+                    </div>
+                  </div>
+                  <div class="col-12 form-field">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <div class="input-shell textarea-shell">
+                      <i class="bi bi-chat-left-text" aria-hidden="true"></i>
+                      <textarea class="form-control" id="message" name="message" rows="5" placeholder="Cuentanos sobre tu infraestructura, sitio web o datos a optimizar" required></textarea>
+                    </div>
+                    <div class="invalid-feedback">Escribe un mensaje breve.</div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-eco btn-lg w-100 form-submit">
+                      <span>Enviar mensaje</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </button>
+                    <p class="form-note"><i class="bi bi-shield-check" aria-hidden="true"></i> Respuesta estimada en menos de 24 horas habiles.</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script>
-        let lastScroll = 0;
-        const header = document.querySelector('.header');
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-4">
+            <a class="footer-brand" href="#inicio"><span class="brand-mark"><i class="bi bi-leaf"></i></span> EcoByte</a>
+            <p>Innovación que no deja huella</p>
+          </div>
+          <div class="col-lg-5">
+            <nav class="footer-links" aria-label="Enlaces del footer">
+              <a href="#nosotros">Nosotros</a>
+              <a href="#problemas">Problemas</a>
+              <a href="#servicios">Servicios</a>
+              <a href="#beneficios">Beneficios</a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+          </div>
+          <div class="col-lg-3">
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 EcoByte. Todos los derechos reservados.</span>
+          <span>Equipo Ex-Convictos</span>
+        </div>
+      </div>
+    </footer>
 
-        window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > lastScroll && currentScroll > 100) {
-            header.classList.add('hide');
-        } else {
-            header.classList.remove('hide');
-        }
-
-        lastScroll = currentScroll;
-        });
-    </script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
