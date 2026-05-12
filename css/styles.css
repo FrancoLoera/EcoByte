@@ -579,6 +579,7 @@ img {
 .problem-card,
 .service-feature,
 .benefit-item,
+.certification-card,
 .testimonial-card,
 .contact-form {
   background: rgba(255, 255, 255, 0.82);
@@ -594,14 +595,16 @@ img {
 
 .mission-card i,
 .problem-card i,
-.benefit-item i {
+.benefit-item i,
+.certification-card i {
   color: var(--eco-green);
   font-size: 1.8rem;
 }
 
 .mission-card h3,
 .problem-card h3,
-.service-feature h3 {
+.service-feature h3,
+.certification-card h3 {
   margin: 0.8rem 0 0.6rem;
   font-size: 1.25rem;
   font-weight: 850;
@@ -610,6 +613,7 @@ img {
 .mission-card p,
 .problem-card p,
 .service-feature p,
+.certification-card p,
 .testimonial-card span {
   color: var(--eco-muted);
 }
@@ -629,7 +633,8 @@ img {
 
 .mission-card,
 .benefit-item,
-.service-feature {
+.service-feature,
+.certification-card {
   position: relative;
   overflow: hidden;
 }
@@ -637,7 +642,8 @@ img {
 .problem-card::before,
 .mission-card::before,
 .benefit-item::before,
-.service-feature::before {
+.service-feature::before,
+.certification-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -649,7 +655,8 @@ img {
 
 .problem-card:hover,
 .benefit-item:hover,
-.service-feature:hover {
+.service-feature:hover,
+.certification-card:hover {
   transform: translateY(-7px);
   border-color: rgba(26, 163, 111, 0.35);
   box-shadow: 0 22px 62px rgba(16, 37, 29, 0.12);
@@ -658,7 +665,8 @@ img {
 .problem-card:hover::before,
 .mission-card:hover::before,
 .benefit-item:hover::before,
-.service-feature:hover::before {
+.service-feature:hover::before,
+.certification-card:hover::before {
   opacity: 1;
 }
 
@@ -830,6 +838,187 @@ img {
 
 .benefit-item span {
   font-weight: 800;
+}
+
+.certifications-section {
+  background:
+    radial-gradient(circle at top left, rgba(223, 245, 233, 0.7), transparent 28rem),
+    linear-gradient(180deg, #ffffff, #f8fbf5);
+}
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.certification-card {
+  min-height: 250px;
+  padding: 1.35rem;
+  border-radius: var(--eco-radius);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.certification-card i {
+  display: inline-grid;
+  width: 52px;
+  aspect-ratio: 1;
+  place-items: center;
+  color: var(--eco-white);
+  background: linear-gradient(135deg, var(--eco-green), var(--eco-tech));
+  border-radius: 16px;
+}
+
+.certification-card span {
+  display: block;
+  margin-top: 1rem;
+  color: var(--eco-green);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.clients-section {
+  background:
+    radial-gradient(circle at 8% 42%, rgba(166, 199, 138, 0.28), transparent 9rem),
+    radial-gradient(circle at 88% 70%, rgba(223, 245, 233, 0.2), transparent 11rem),
+    linear-gradient(135deg, #003f2a, #00351f 62%, #002d1d);
+  color: var(--eco-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.clients-section::before,
+.clients-section::after {
+  content: "";
+  position: absolute;
+  width: 210px;
+  aspect-ratio: 1;
+  pointer-events: none;
+  opacity: 0.42;
+  background:
+    radial-gradient(ellipse at center, rgba(214, 237, 198, 0.86) 0 18%, transparent 20%),
+    radial-gradient(ellipse at 30% 42%, rgba(149, 186, 129, 0.7) 0 18%, transparent 20%),
+    radial-gradient(ellipse at 70% 58%, rgba(149, 186, 129, 0.7) 0 18%, transparent 20%);
+  filter: blur(0.2px);
+}
+
+.clients-section::before {
+  top: 26px;
+  right: -56px;
+  transform: rotate(-20deg);
+}
+
+.clients-section::after {
+  left: -74px;
+  bottom: -22px;
+  transform: rotate(18deg);
+}
+
+.clients-heading {
+  max-width: 940px;
+  margin-inline: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.eco-mark {
+  display: inline-grid;
+  width: 74px;
+  aspect-ratio: 1;
+  place-items: center;
+  margin-bottom: 0.8rem;
+  border: 2px solid rgba(250, 245, 229, 0.82);
+  border-radius: 999px;
+  color: #faf5e5;
+  font-size: 2rem;
+}
+
+.clients-heading h2 {
+  color: #faf5e5;
+  font-size: clamp(3.2rem, 9vw, 6rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.clients-heading h2 span,
+.clients-heading h2 strong {
+  display: block;
+}
+
+.clients-heading h2 strong {
+  margin-left: clamp(0rem, 14vw, 12rem);
+}
+
+.clients-heading p {
+  max-width: 720px;
+  margin: 1.2rem auto 0;
+  color: rgba(250, 245, 229, 0.82);
+}
+
+.client-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 4vw, 3rem);
+  align-items: center;
+  margin-top: clamp(2.2rem, 6vw, 4.4rem);
+  position: relative;
+  z-index: 1;
+}
+
+.client-logo-card {
+  min-height: 150px;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  background: #ffffff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.24);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.client-logo-card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 34px 80px rgba(0, 0, 0, 0.3);
+}
+
+.brand-logo {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.logo-caesars {
+  color: #f26a00;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 800;
+}
+
+.logo-coca {
+  color: #098b18;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: clamp(2rem, 5vw, 3.7rem);
+  font-weight: 700;
+}
+
+.logo-burger {
+  max-width: 180px;
+  padding: 0.6rem 0.8rem;
+  color: #df1d2f;
+  font-size: clamp(1.4rem, 3.5vw, 2.35rem);
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: -0.06em;
+  border: 6px solid #6abf40;
+  border-top-color: #f5a51a;
+  border-bottom-color: #f5a51a;
+  border-radius: 999px;
 }
 
 .testimonials-section {
@@ -1240,6 +1429,11 @@ textarea.form-control {
     gap: 1rem;
   }
 
+  .certification-grid,
+  .client-logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .service-icon {
     width: 68px;
   }
@@ -1401,6 +1595,8 @@ textarea.form-control {
   .problem-card,
   .service-feature,
   .benefit-item,
+  .certification-card,
+  .client-logo-card,
   .testimonial-card,
   .contact-form {
     max-width: 100%;
@@ -1408,7 +1604,8 @@ textarea.form-control {
 
   .mission-card,
   .problem-card,
-  .service-feature {
+  .service-feature,
+  .certification-card {
     padding: 1.08rem;
     border-radius: 20px;
   }
@@ -1428,6 +1625,8 @@ textarea.form-control {
   }
 
   .benefit-grid,
+  .certification-grid,
+  .client-logo-grid,
   .counter-row {
     grid-template-columns: 1fr;
   }
@@ -1443,6 +1642,19 @@ textarea.form-control {
   .benefit-item {
     align-items: flex-start;
     min-height: 74px;
+  }
+
+  .certification-card,
+  .client-logo-card {
+    min-height: auto;
+  }
+
+  .clients-heading h2 strong {
+    margin-left: 0;
+  }
+
+  .client-logo-card {
+    padding: 1rem;
   }
 
   .testimonial-card {
